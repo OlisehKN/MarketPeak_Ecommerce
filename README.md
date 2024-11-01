@@ -74,6 +74,62 @@
    - Answer: I used the command "sudo systemctl reload httpd"
 ![Screenshot (68)](https://github.com/user-attachments/assets/41b84be2-e66d-4507-9375-f9ae3800210f)
 
+## 3 Continuous Intergration and Development Workflow
+
+Step 1: Developing New Features
+   - Create a Development Branch
+       - Answer: I did this by inputting the "git branch development" command on gitbash
+![Screenshot (69)](https://github.com/user-attachments/assets/abe86da8-e0ea-4bf5-a54c-909fa61df198)
+   - Implement Changes
+       - Answer: I used the "git checkout development" command to enter into the development branch on the terminal
+![Screenshot (70)](https://github.com/user-attachments/assets/a6522e49-927b-496a-9495-88a3bae6368c)
+
+Step 2: Version Control on Git
+   - Stage your Changes
+       - Answer: After making changes on the Development branch, i used the "git add ." command to stage the changes
+![Screenshot (72)](https://github.com/user-attachments/assets/66a56515-fbb7-43fe-9ac5-7edc1fde137b)
+   - Commit your Changes
+       - Answer: To save my changes on the git repository, i use the "git commit -m "Add new features or its bugs"
+![Screenshot (73)](https://github.com/user-attachments/assets/26356d94-a7fd-4777-821f-73f4370eee72)
+   - Push Changes to GitHub
+       - Answer: I used the "git push origin development" command to upload the development branch with the new changes to GitHub.
+![Screenshot (74)](https://github.com/user-attachments/assets/d6356f9f-7c90-43a5-8bc9-546270969e50)
+
+Step 3: Pull Requests and Merging to the Main Branch
+   - Create a Pull Request (PR)
+       - Answer: On GitHub, i created a pull request to merge the development branch with the main branch on the repository
+![Screenshot (75)](https://github.com/user-attachments/assets/29617c5a-95f7-4dd8-80be-18c403cbf504)
+   - Review and Merge the PR
+       - Answer: i used the "git checkout main" and "git merge development" commands to review and merge the development branch to the main
+![Screenshot (76)](https://github.com/user-attachments/assets/7f941736-717c-41e2-b567-e83755100c9b)
+![Screenshot (77)](https://github.com/user-attachments/assets/8e72407e-4756-489d-915f-529a404e1f78)
+   - Push the Merged Changes on GitHub
+       - Answer: After the successfully merging the development branch to the main branch, i used the "git push origin main" command to ensure the main branch containing the updates is pushed to the remote repository
+![Screenshot (81)](https://github.com/user-attachments/assets/e38a002f-9524-44dd-910c-0fb2f340a1e4)
+
+Step 4: Deploying Updates to the Production Server
+   - Pull the latest changes on the Server
+       - Answer: I used the "git pull origin main" command to pull the latest changes from the main branch into the AWS EC2 Server
+![Screenshot (82)](https://github.com/user-attachments/assets/d2c46566-58ab-42d5-b858-1ad0e02ca653)
+   - Restart the Web Server
+       - I used the "sudo systemctl reload httpd" command on the EC2 Server to reload the web page to implement the updated changes
+![Screenshot (80)](https://github.com/user-attachments/assets/7df139c3-c075-4924-b846-1fce6de7704a)
+
+
+## Conclusion
+   - In this project, i showed my understanding of how to create an AWS Server and to connect it to a linux server. Although i faced some difficulties in viewing the web page, i showed that i am capable in the development and implementation of said website.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
